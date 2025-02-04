@@ -53,12 +53,9 @@ void loop() {
   String dataString = "";
 
   // read three sensors and append to the string:
-  for (int analogPin = 0; analogPin < 3; analogPin++) {
-    int sensor = analogRead(analogPin);
+  //for (int analogPin = 0; analogPin < 3; analogPin++) {
+    int sensor = analogRead(A2);
     dataString += String(sensor);
-    if (analogPin < 2) {
-      dataString += ",";
-    }
   }
 
   // open the file. note that only one file can be open at a time,
