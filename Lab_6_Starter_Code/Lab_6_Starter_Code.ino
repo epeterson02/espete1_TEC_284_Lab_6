@@ -26,7 +26,7 @@
 #include <SPI.h>
 #include <SD.h>
 
-const int chipSelect = 4;
+const int chipSelect = 10;
 
 void setup() {
   // Open serial communications and wait for port to open:
@@ -56,7 +56,7 @@ void loop() {
   //for (int analogPin = 0; analogPin < 3; analogPin++) {
     int sensor = analogRead(A2);
     dataString += String(sensor);
-  }
+
 
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
